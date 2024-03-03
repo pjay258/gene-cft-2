@@ -1,0 +1,41 @@
+2024-03-02 21:42:28,843 INFO    StreamThr :35974 [internal.py:wandb_internal():86] W&B internal server running at pid: 35974, started at: 2024-03-02 21:42:28.841989
+2024-03-02 21:42:28,845 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status
+2024-03-02 21:42:28,857 INFO    WriterThread:35974 [datastore.py:open_for_write():87] open: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_214228-ivnjc4op/run-ivnjc4op.wandb
+2024-03-02 21:42:28,858 DEBUG   SenderThread:35974 [sender.py:send():382] send: header
+2024-03-02 21:42:28,859 DEBUG   SenderThread:35974 [sender.py:send():382] send: run
+2024-03-02 21:42:29,390 INFO    SenderThread:35974 [dir_watcher.py:__init__():211] watching files in: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_214228-ivnjc4op/files
+2024-03-02 21:42:29,390 INFO    SenderThread:35974 [sender.py:_start_run_threads():1136] run started: ivnjc4op with start time 1709383348.840866
+2024-03-02 21:42:32,465 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:42:33,874 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-02 21:42:34,392 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:42:37,466 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:42:38,878 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-02 21:42:39,392 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:42:42,467 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:42:43,882 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-02 21:42:44,393 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:42:47,468 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:42:48,886 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-02 21:42:49,395 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:42:52,468 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:42:53,890 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-02 21:42:54,396 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:42:57,469 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:42:58,894 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-02 21:42:59,397 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:43:02,470 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:43:03,898 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-02 21:43:04,398 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:43:07,471 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:43:08,902 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-02 21:43:09,398 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:43:12,472 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:43:13,906 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-02 21:43:14,399 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:43:17,173 DEBUG   SystemMonitor:35974 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-02 21:43:17,179 DEBUG   SenderThread:35974 [sender.py:send():382] send: stats
+2024-03-02 21:43:18,182 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:43:18,910 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-02 21:43:19,400 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:43:23,183 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 21:43:23,917 DEBUG   HandlerThread:35974 [handler.py:handle_request():146] handle_request: keepalive

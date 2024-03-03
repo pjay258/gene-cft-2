@@ -1,0 +1,200 @@
+2024-03-02 23:10:58,358 INFO    StreamThr :44400 [internal.py:wandb_internal():86] W&B internal server running at pid: 44400, started at: 2024-03-02 23:10:58.357508
+2024-03-02 23:10:58,361 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: status
+2024-03-02 23:10:58,365 INFO    WriterThread:44400 [datastore.py:open_for_write():87] open: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/run-gwxqda1f.wandb
+2024-03-02 23:10:58,366 DEBUG   SenderThread:44400 [sender.py:send():382] send: header
+2024-03-02 23:10:58,367 DEBUG   SenderThread:44400 [sender.py:send():382] send: run
+2024-03-02 23:10:58,907 INFO    SenderThread:44400 [dir_watcher.py:__init__():211] watching files in: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files
+2024-03-02 23:10:58,907 INFO    SenderThread:44400 [sender.py:_start_run_threads():1136] run started: gwxqda1f with start time 1709388658.359259
+2024-03-02 23:10:58,928 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: check_version
+2024-03-02 23:10:58,929 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: check_version
+2024-03-02 23:10:59,021 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: run_start
+2024-03-02 23:10:59,049 DEBUG   HandlerThread:44400 [system_info.py:__init__():27] System info init
+2024-03-02 23:10:59,049 DEBUG   HandlerThread:44400 [system_info.py:__init__():42] System info init done
+2024-03-02 23:10:59,049 INFO    HandlerThread:44400 [system_monitor.py:start():194] Starting system monitor
+2024-03-02 23:10:59,049 INFO    SystemMonitor:44400 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-02 23:10:59,050 INFO    HandlerThread:44400 [system_monitor.py:probe():214] Collecting system info
+2024-03-02 23:10:59,051 INFO    SystemMonitor:44400 [interfaces.py:start():190] Started cpu monitoring
+2024-03-02 23:10:59,051 INFO    SystemMonitor:44400 [interfaces.py:start():190] Started disk monitoring
+2024-03-02 23:10:59,053 INFO    SystemMonitor:44400 [interfaces.py:start():190] Started gpu monitoring
+2024-03-02 23:10:59,054 INFO    SystemMonitor:44400 [interfaces.py:start():190] Started memory monitoring
+2024-03-02 23:10:59,055 INFO    SystemMonitor:44400 [interfaces.py:start():190] Started network monitoring
+2024-03-02 23:10:59,117 DEBUG   HandlerThread:44400 [system_info.py:probe():151] Probing system
+2024-03-02 23:10:59,124 DEBUG   HandlerThread:44400 [gitlib.py:_init_repo():56] git repository is invalid
+2024-03-02 23:10:59,124 DEBUG   HandlerThread:44400 [system_info.py:probe():199] Probing system done
+2024-03-02 23:10:59,124 DEBUG   HandlerThread:44400 [system_monitor.py:probe():223] {'os': 'Linux-4.15.0-213-generic-x86_64-with-glibc2.27', 'python': '3.9.0', 'heartbeatAt': '2024-03-02T14:10:59.117964', 'startedAt': '2024-03-02T14:10:58.349198', 'docker': None, 'cuda': None, 'args': ('-seed', '0', '-cuda', '3', '-device', '3', '-epochs', '2', '-lr', '0.0001', '-batch_size', '64', '-dataset=bffhq'), 'state': 'running', 'program': '/home/zungwooker/gene-cft-2/preprocess/PBA/train_BCD.py', 'codePathLocal': 'train_BCD.py', 'codePath': 'train_BCD.py', 'host': 'km', 'username': 'zungwooker', 'executable': '/home/zungwooker/anaconda3/envs/gene/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2100.7417187499996, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2099.991, 'min': 0.0, 'max': 0.0}, {'current': 2101.016, 'min': 0.0, 'max': 0.0}, {'current': 2100.741, 'min': 0.0, 'max': 0.0}, {'current': 2100.928, 'min': 0.0, 'max': 0.0}, {'current': 2101.081, 'min': 0.0, 'max': 0.0}, {'current': 2101.049, 'min': 0.0, 'max': 0.0}, {'current': 2101.681, 'min': 0.0, 'max': 0.0}, {'current': 2102.214, 'min': 0.0, 'max': 0.0}, {'current': 2101.018, 'min': 0.0, 'max': 0.0}, {'current': 2101.156, 'min': 0.0, 'max': 0.0}, {'current': 2102.084, 'min': 0.0, 'max': 0.0}, {'current': 2100.281, 'min': 0.0, 'max': 0.0}, {'current': 2102.154, 'min': 0.0, 'max': 0.0}, {'current': 2101.551, 'min': 0.0, 'max': 0.0}, {'current': 2101.389, 'min': 0.0, 'max': 0.0}, {'current': 2101.242, 'min': 0.0, 'max': 0.0}, {'current': 2102.014, 'min': 0.0, 'max': 0.0}, {'current': 2101.34, 'min': 0.0, 'max': 0.0}, {'current': 2100.619, 'min': 0.0, 'max': 0.0}, {'current': 2101.27, 'min': 0.0, 'max': 0.0}, {'current': 2101.243, 'min': 0.0, 'max': 0.0}, {'current': 2097.209, 'min': 0.0, 'max': 0.0}, {'current': 2099.183, 'min': 0.0, 'max': 0.0}, {'current': 2101.049, 'min': 0.0, 'max': 0.0}, {'current': 2099.691, 'min': 0.0, 'max': 0.0}, {'current': 2100.583, 'min': 0.0, 'max': 0.0}, {'current': 2099.999, 'min': 0.0, 'max': 0.0}, {'current': 2101.794, 'min': 0.0, 'max': 0.0}, {'current': 2101.509, 'min': 0.0, 'max': 0.0}, {'current': 2101.461, 'min': 0.0, 'max': 0.0}, {'current': 2102.136, 'min': 0.0, 'max': 0.0}, {'current': 2098.866, 'min': 0.0, 'max': 0.0}, {'current': 2099.999, 'min': 0.0, 'max': 0.0}, {'current': 2101.479, 'min': 0.0, 'max': 0.0}, {'current': 2100.918, 'min': 0.0, 'max': 0.0}, {'current': 2100.975, 'min': 0.0, 'max': 0.0}, {'current': 2100.28, 'min': 0.0, 'max': 0.0}, {'current': 2101.401, 'min': 0.0, 'max': 0.0}, {'current': 2100.615, 'min': 0.0, 'max': 0.0}, {'current': 2101.458, 'min': 0.0, 'max': 0.0}, {'current': 2100.842, 'min': 0.0, 'max': 0.0}, {'current': 2101.276, 'min': 0.0, 'max': 0.0}, {'current': 2100.961, 'min': 0.0, 'max': 0.0}, {'current': 2101.092, 'min': 0.0, 'max': 0.0}, {'current': 2101.737, 'min': 0.0, 'max': 0.0}, {'current': 2100.816, 'min': 0.0, 'max': 0.0}, {'current': 2100.996, 'min': 0.0, 'max': 0.0}, {'current': 2101.129, 'min': 0.0, 'max': 0.0}, {'current': 2101.239, 'min': 0.0, 'max': 0.0}, {'current': 2100.772, 'min': 0.0, 'max': 0.0}, {'current': 2100.047, 'min': 0.0, 'max': 0.0}, {'current': 2100.041, 'min': 0.0, 'max': 0.0}, {'current': 2101.59, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.005, 'min': 0.0, 'max': 0.0}, {'current': 2101.622, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2101.104, 'min': 0.0, 'max': 0.0}, {'current': 2100.28, 'min': 0.0, 'max': 0.0}, {'current': 2100.338, 'min': 0.0, 'max': 0.0}, {'current': 2101.027, 'min': 0.0, 'max': 0.0}, {'current': 2100.081, 'min': 0.0, 'max': 0.0}, {'current': 2101.57, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 3665.955093383789, 'used': 2542.971279144287}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 125.55576705932617}}
+2024-03-02 23:10:59,125 INFO    HandlerThread:44400 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-02 23:10:59,125 INFO    HandlerThread:44400 [system_monitor.py:probe():227] Publishing system info
+2024-03-02 23:10:59,125 DEBUG   HandlerThread:44400 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-03-02 23:10:59,913 INFO    Thread-12 :44400 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/conda-environment.yaml
+2024-03-02 23:11:07,228 DEBUG   HandlerThread:44400 [system_info.py:_save_conda():220] Saving conda packages done
+2024-03-02 23:11:07,231 INFO    HandlerThread:44400 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-02 23:11:07,237 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 23:11:07,237 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-02 23:11:07,238 DEBUG   SenderThread:44400 [sender.py:send():382] send: files
+2024-03-02 23:11:07,239 INFO    SenderThread:44400 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-02 23:11:07,248 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-02 23:11:07,249 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: python_packages
+2024-03-02 23:11:07,251 DEBUG   SenderThread:44400 [sender.py:send():382] send: telemetry
+2024-03-02 23:11:07,251 DEBUG   SenderThread:44400 [sender.py:send():382] send: metric
+2024-03-02 23:11:07,252 WARNING SenderThread:44400 [sender.py:send_metric():1354] Seen metric with glob (shouldn't happen)
+2024-03-02 23:11:07,252 DEBUG   SenderThread:44400 [sender.py:send():382] send: telemetry
+2024-03-02 23:11:07,253 DEBUG   SenderThread:44400 [sender.py:send():382] send: metric
+2024-03-02 23:11:07,253 WARNING SenderThread:44400 [sender.py:send_metric():1354] Seen metric with glob (shouldn't happen)
+2024-03-02 23:11:07,253 DEBUG   SenderThread:44400 [sender.py:send():382] send: metric
+2024-03-02 23:11:07,253 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-02 23:11:07,254 WARNING SenderThread:44400 [sender.py:send_metric():1354] Seen metric with glob (shouldn't happen)
+2024-03-02 23:11:07,254 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-02 23:11:07,257 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: stop_status
+2024-03-02 23:11:07,609 DEBUG   SenderThread:44400 [sender.py:send():382] send: exit
+2024-03-02 23:11:07,609 INFO    SenderThread:44400 [sender.py:send_exit():589] handling exit code: 1
+2024-03-02 23:11:07,609 INFO    SenderThread:44400 [sender.py:send_exit():591] handling runtime: 8
+2024-03-02 23:11:07,613 INFO    SenderThread:44400 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-02 23:11:07,613 INFO    SenderThread:44400 [sender.py:send_exit():597] send defer
+2024-03-02 23:11:07,613 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:07,613 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-02 23:11:07,614 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:07,614 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-03-02 23:11:07,614 INFO    SenderThread:44400 [sender.py:transition_state():617] send defer: 1
+2024-03-02 23:11:07,614 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:07,614 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-02 23:11:07,615 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:07,615 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-03-02 23:11:07,615 INFO    SenderThread:44400 [sender.py:transition_state():617] send defer: 2
+2024-03-02 23:11:07,615 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:07,615 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-02 23:11:07,615 INFO    HandlerThread:44400 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-02 23:11:07,616 DEBUG   SystemMonitor:44400 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-02 23:11:07,616 INFO    HandlerThread:44400 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-02 23:11:07,617 DEBUG   SystemMonitor:44400 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-02 23:11:07,617 INFO    HandlerThread:44400 [interfaces.py:finish():202] Joined disk monitor
+2024-03-02 23:11:07,617 DEBUG   SystemMonitor:44400 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-02 23:11:07,911 INFO    Thread-12 :44400 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/conda-environment.yaml
+2024-03-02 23:11:07,912 INFO    Thread-12 :44400 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/wandb-summary.json
+2024-03-02 23:11:07,912 INFO    Thread-12 :44400 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/wandb-metadata.json
+2024-03-02 23:11:07,912 INFO    Thread-12 :44400 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/output.log
+2024-03-02 23:11:07,913 INFO    Thread-12 :44400 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/requirements.txt
+2024-03-02 23:11:08,047 INFO    wandb-upload_0:44400 [upload_job.py:push():131] Uploaded file /tmp/tmp72em9xevwandb/vft0oemz-wandb-metadata.json
+2024-03-02 23:11:09,325 INFO    HandlerThread:44400 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-02 23:11:09,326 INFO    HandlerThread:44400 [interfaces.py:finish():202] Joined memory monitor
+2024-03-02 23:11:09,326 INFO    HandlerThread:44400 [interfaces.py:finish():202] Joined network monitor
+2024-03-02 23:11:09,327 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-02 23:11:09,328 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:09,328 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-03-02 23:11:09,329 INFO    SenderThread:44400 [sender.py:transition_state():617] send defer: 3
+2024-03-02 23:11:09,329 DEBUG   SenderThread:44400 [sender.py:send():382] send: stats
+2024-03-02 23:11:09,329 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:09,330 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: poll_exit
+2024-03-02 23:11:09,331 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-02 23:11:09,331 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 23:11:09,332 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:09,332 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-03-02 23:11:09,332 INFO    SenderThread:44400 [sender.py:transition_state():617] send defer: 4
+2024-03-02 23:11:09,332 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:09,332 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-02 23:11:09,332 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:09,333 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-03-02 23:11:09,333 INFO    SenderThread:44400 [sender.py:transition_state():617] send defer: 5
+2024-03-02 23:11:09,333 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:09,333 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-02 23:11:09,333 DEBUG   SenderThread:44400 [sender.py:send():382] send: summary
+2024-03-02 23:11:09,334 INFO    SenderThread:44400 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-02 23:11:09,335 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:09,335 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-03-02 23:11:09,335 INFO    SenderThread:44400 [sender.py:transition_state():617] send defer: 6
+2024-03-02 23:11:09,335 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:09,335 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-02 23:11:09,335 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:09,335 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-03-02 23:11:09,341 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 23:11:09,570 INFO    SenderThread:44400 [sender.py:transition_state():617] send defer: 7
+2024-03-02 23:11:09,570 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:09,571 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-02 23:11:09,571 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:09,571 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-03-02 23:11:09,913 INFO    Thread-12 :44400 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/wandb-summary.json
+2024-03-02 23:11:09,913 INFO    Thread-12 :44400 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/config.yaml
+2024-03-02 23:11:09,914 INFO    Thread-12 :44400 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/output.log
+2024-03-02 23:11:10,268 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-02 23:11:11,622 INFO    SenderThread:44400 [sender.py:transition_state():617] send defer: 8
+2024-03-02 23:11:11,622 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: poll_exit
+2024-03-02 23:11:11,622 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:11,623 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-02 23:11:11,623 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:11,623 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-03-02 23:11:11,623 INFO    SenderThread:44400 [job_builder.py:build():296] Attempting to build job artifact
+2024-03-02 23:11:11,624 INFO    SenderThread:44400 [job_builder.py:_get_source_type():437] no source found
+2024-03-02 23:11:11,624 INFO    SenderThread:44400 [sender.py:transition_state():617] send defer: 9
+2024-03-02 23:11:11,625 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:11,625 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-02 23:11:11,625 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:11,625 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-03-02 23:11:11,625 INFO    SenderThread:44400 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-02 23:11:11,914 INFO    Thread-12 :44400 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/output.log
+2024-03-02 23:11:11,915 INFO    SenderThread:44400 [dir_watcher.py:finish():388] scan: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files
+2024-03-02 23:11:11,915 INFO    SenderThread:44400 [dir_watcher.py:finish():402] scan save: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/requirements.txt requirements.txt
+2024-03-02 23:11:11,915 INFO    SenderThread:44400 [dir_watcher.py:finish():402] scan save: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/conda-environment.yaml conda-environment.yaml
+2024-03-02 23:11:11,916 INFO    SenderThread:44400 [dir_watcher.py:finish():402] scan save: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/config.yaml config.yaml
+2024-03-02 23:11:11,922 INFO    SenderThread:44400 [dir_watcher.py:finish():402] scan save: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/wandb-summary.json wandb-summary.json
+2024-03-02 23:11:11,935 INFO    SenderThread:44400 [dir_watcher.py:finish():402] scan save: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/wandb-metadata.json wandb-metadata.json
+2024-03-02 23:11:11,935 INFO    SenderThread:44400 [dir_watcher.py:finish():402] scan save: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/output.log output.log
+2024-03-02 23:11:11,941 INFO    SenderThread:44400 [sender.py:transition_state():617] send defer: 10
+2024-03-02 23:11:11,942 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:11,942 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-02 23:11:11,943 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:11,948 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-03-02 23:11:11,949 INFO    SenderThread:44400 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-02 23:11:12,270 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-02 23:11:12,270 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: poll_exit
+2024-03-02 23:11:12,437 INFO    wandb-upload_2:44400 [upload_job.py:push():131] Uploaded file /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/config.yaml
+2024-03-02 23:11:12,474 INFO    wandb-upload_0:44400 [upload_job.py:push():131] Uploaded file /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/requirements.txt
+2024-03-02 23:11:12,531 INFO    wandb-upload_3:44400 [upload_job.py:push():131] Uploaded file /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/wandb-summary.json
+2024-03-02 23:11:12,540 INFO    wandb-upload_1:44400 [upload_job.py:push():131] Uploaded file /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/conda-environment.yaml
+2024-03-02 23:11:12,547 INFO    wandb-upload_4:44400 [upload_job.py:push():131] Uploaded file /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/files/output.log
+2024-03-02 23:11:12,747 INFO    Thread-11 :44400 [sender.py:transition_state():617] send defer: 11
+2024-03-02 23:11:12,748 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:12,748 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-02 23:11:12,748 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:12,748 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-03-02 23:11:12,748 INFO    SenderThread:44400 [file_pusher.py:join():178] waiting for file pusher
+2024-03-02 23:11:12,749 INFO    SenderThread:44400 [sender.py:transition_state():617] send defer: 12
+2024-03-02 23:11:12,749 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:12,749 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-02 23:11:12,749 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:12,749 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-03-02 23:11:12,750 INFO    SenderThread:44400 [file_stream.py:finish():595] file stream finish called
+2024-03-02 23:11:13,271 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-02 23:11:15,425 INFO    SenderThread:44400 [file_stream.py:finish():599] file stream finish is done
+2024-03-02 23:11:15,425 INFO    SenderThread:44400 [sender.py:transition_state():617] send defer: 13
+2024-03-02 23:11:15,425 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: poll_exit
+2024-03-02 23:11:15,425 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:15,426 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-02 23:11:15,426 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 23:11:15,426 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:15,426 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-03-02 23:11:15,426 INFO    SenderThread:44400 [sender.py:transition_state():617] send defer: 14
+2024-03-02 23:11:15,427 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 23:11:15,427 DEBUG   SenderThread:44400 [sender.py:send():382] send: final
+2024-03-02 23:11:15,427 INFO    HandlerThread:44400 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-02 23:11:15,427 DEBUG   SenderThread:44400 [sender.py:send():382] send: footer
+2024-03-02 23:11:15,428 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: defer
+2024-03-02 23:11:15,428 INFO    SenderThread:44400 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-03-02 23:11:15,428 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-02 23:11:15,429 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: poll_exit
+2024-03-02 23:11:15,429 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-02 23:11:15,430 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: poll_exit
+2024-03-02 23:11:15,430 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: server_info
+2024-03-02 23:11:15,431 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: server_info
+2024-03-02 23:11:15,436 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-02 23:11:15,437 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-02 23:11:15,437 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-02 23:11:15,438 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: job_info
+2024-03-02 23:11:15,733 DEBUG   SenderThread:44400 [sender.py:send_request():409] send_request: job_info
+2024-03-02 23:11:15,733 INFO    MainThread:44400 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-02 23:11:15,733 INFO    MainThread:44400 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-02 23:11:15,734 INFO    MainThread:44400 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-02 23:11:15,734 DEBUG   HandlerThread:44400 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-02 23:11:15,734 INFO    HandlerThread:44400 [handler.py:finish():869] shutting down handler
+2024-03-02 23:11:16,438 INFO    WriterThread:44400 [datastore.py:close():296] close: /home/zungwooker/gene-cft-2/preprocess/PBA/wandb/run-20240302_231058-gwxqda1f/run-gwxqda1f.wandb
+2024-03-02 23:11:16,733 INFO    SenderThread:44400 [sender.py:finish():1572] shutting down sender
+2024-03-02 23:11:16,733 INFO    SenderThread:44400 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-02 23:11:16,733 INFO    SenderThread:44400 [file_pusher.py:join():178] waiting for file pusher

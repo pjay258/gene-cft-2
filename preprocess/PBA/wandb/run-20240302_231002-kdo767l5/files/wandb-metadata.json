@@ -1,0 +1,403 @@
+{
+    "os": "Linux-4.15.0-213-generic-x86_64-with-glibc2.27",
+    "python": "3.9.0",
+    "heartbeatAt": "2024-03-02T14:10:03.028013",
+    "startedAt": "2024-03-02T14:10:02.226960",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "-seed",
+        "0",
+        "-cuda",
+        "3",
+        "-device=3",
+        "-epochs",
+        "2",
+        "-lr",
+        "0.0001",
+        "-batch_size",
+        "64",
+        "-dataset=bffhq"
+    ],
+    "state": "running",
+    "program": "/home/zungwooker/gene-cft-2/preprocess/PBA/train_BCD.py",
+    "codePathLocal": "train_BCD.py",
+    "codePath": "train_BCD.py",
+    "host": "km",
+    "username": "zungwooker",
+    "executable": "/home/zungwooker/anaconda3/envs/gene/bin/python",
+    "cpu_count": 32,
+    "cpu_count_logical": 64,
+    "cpu_freq": {
+        "current": 2100.6965,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2100.133,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.538,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.863,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.614,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.318,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.097,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.383,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.474,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.975,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.747,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.045,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.215,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.592,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.032,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.482,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.885,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.031,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2102.108,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.248,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2102.545,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.838,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2102.079,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.015,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.036,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.792,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.946,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.75,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.257,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.551,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.258,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.773,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.099,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.913,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.148,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2106.783,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.246,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.263,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.359,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.069,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.616,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.871,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.756,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.82,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.75,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2096.084,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.982,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.027,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.224,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.815,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2101.662,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.849,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.001,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.461,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.695,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 3665.955093383789,
+            "used": 2542.971179962158
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 8,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 125.55576705932617
+    }
+}

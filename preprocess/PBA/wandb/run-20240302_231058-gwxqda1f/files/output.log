@@ -1,0 +1,15 @@
+Epochs: 0
+============================
+Random seed has been fixed.
+Seed: 0
+============================
+Traceback (most recent call last):
+  File "/home/zungwooker/gene-cft-2/preprocess/PBA/train_BCD.py", line 113, in <module>
+    main()
+  File "/home/zungwooker/gene-cft-2/preprocess/PBA/train_BCD.py", line 84, in main
+    train(remote=True,
+  File "/home/zungwooker/gene-cft-2/preprocess/PBA/utils/loops.py", line 33, in train
+    model = model.to(device)
+  File "/home/zungwooker/anaconda3/envs/gene/lib/python3.9/site-packages/torch/nn/modules/module.py", line 880, in to
+    device, dtype, non_blocking, convert_to_format = torch._C._nn._parse_to(*args, **kwargs)
+RuntimeError: Invalid device string: '3'
