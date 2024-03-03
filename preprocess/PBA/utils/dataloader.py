@@ -75,12 +75,25 @@ transforms_preprcs = {
 }
 
 
-def return_dataset(dataset, split, root, transform, use_generated):
+def return_dataset(dataset, split, root, transform, use_generated, cmnist_ratio):
     if dataset == 'bffhq':
         return datasets.bFFHQDataset(root=root,
                                      split=split,
                                      transform=transform,
                                      use_generated=use_generated)
+    elif dataset == 'cmnist':
+        if split == 'test':
+            bias_ratio = 'unbiased'
+            return datasets.CmnistDataset(root=root,
+                                     type=split,
+                                     bias_ratio=bias_ratio,
+                                     transform=transform,
+                                     )
+        return datasets.CmnistDataset(root=root,
+                                     type=split,
+                                     bias_ratio=cmnist_ratio,
+                                     transform=transform,
+                                     )
 
 
 def get_dataloader(dataset,
@@ -89,16 +102,21 @@ def get_dataloader(dataset,
                    batch_size,
                    shuffle=False, 
                    num_workers=4,
-                   use_generated=True):
+                   use_generated=True,
+                   cmnist_ratio=0.995
+                   ):
     
     transform = transforms_preprcs[dataset][split] # e.g. dataset := 'bffhq', split := 'train'
-    
+
     target_dataset = return_dataset(dataset=dataset,
                                     split=split,
                                     root=root,
                                     transform=transform,
-                                    use_generated=use_generated)
-    
+                                    use_generated=use_generated,
+                                    cmnist_ratio=0.995
+                                    )
+
+
     target_dataloader = DataLoader(dataset=target_dataset,
                                    batch_size=batch_size,
                                    shuffle=shuffle,
@@ -112,7 +130,9 @@ def return_dataloaders(dataset,
                         batch_size,
                         shuffle=True, 
                         num_workers=4,
-                        use_generated=False):
+                        use_generated=False,
+                        cmnist_ratio=0.995
+                        ):
     dataloaders = {
         'train': get_dataloader(dataset=dataset,
                                 split='train',
@@ -120,21 +140,27 @@ def return_dataloaders(dataset,
                                 batch_size=batch_size,
                                 shuffle=shuffle,
                                 num_workers=num_workers,
-                                use_generated=use_generated),
+                                use_generated=use_generated,
+                                cmnist_ratio=0.995
+                                ),
         'valid': get_dataloader(dataset=dataset,
                                 split='valid',
                                 root=root,
                                 batch_size=batch_size,
                                 shuffle=False,
                                 num_workers=num_workers,
-                                use_generated=False),
+                                use_generated=False,
+                                cmnist_ratio=0.995
+                                ),
         'test': get_dataloader(dataset=dataset,
                                 split='test',
                                 root=root,
                                 batch_size=batch_size,
                                 shuffle=False,
                                 num_workers=num_workers,
-                                use_generated=False)
+                                use_generated=False,
+                                cmnist_ratio=0.995
+                                )
     }
 
     return dataloaders

@@ -21,6 +21,7 @@ def main():
     parser.add_argument('-lr', required=True, type=float, help="learning rate")
     parser.add_argument('-batch_size', required=True, type=int, help="batch size")
     parser.add_argument('-dataset', required=True, type=str, help="dataset")
+    parser.add_argument('-cmnist_ratio' , type=float)
     args = parser.parse_args()
 
     ###############################################
@@ -31,7 +32,7 @@ def main():
     seed = args.seed
 
     # WandB
-    remote = True
+    remote = False
     project_name = 'Deboost - mar 2'
     run_name = f'BCD {seed} | seed: {seed}'
 
@@ -61,8 +62,9 @@ def main():
         model = NaiveMLP()
 
     # Training utils
+    data_root = os.path.join(os.getcwd() , 'dataset')
     dataloaders = return_dataloaders(dataset=args.dataset,
-                                    root='../../dataset/', 
+                                    root=data_root, 
                                     batch_size=batch_size,)
     loss_fn = GeneralizedCELoss()
     optimizer = optim.Adam(params = model.parameters(), lr=learning_rate)
@@ -111,7 +113,9 @@ def main():
              loss_fn=loss_fn,
              loss_type='GCE')
     
-    if save: torch.save(model.state_dict(), f=f'{save_path}{args.dataset}/BCD{seed}.pth')
-
+    if args.dataset == 'cmnist':
+        if save: torch.save(model.state_dict(), f=f'{save_path}{args.dataset}_{args.cmnist_ratio}/BCD{seed}.pth')
+    else:
+        if save: torch.save(model.state_dict(), f=f'{save_path}{args.dataset}/BCD{seed}.pth')
 if __name__ == '__main__':
     main()

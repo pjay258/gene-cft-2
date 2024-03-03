@@ -7,7 +7,7 @@ import os
 import torch
 
 class CmnistDataset(Dataset):
-    def __init__(self, type, bias_ratio, transform=None):
+    def __init__(self, type, bias_ratio, transform=None , root='../../dataset/'):
         """
         type: 'train', 'valid', 'test' |
         bias_ratio: 1.0, 0.995, 0.99, 0.98, 0.95, 0.0, 'unbiased'
@@ -20,8 +20,8 @@ class CmnistDataset(Dataset):
             raise Exception("Check bias_ratio")
 
         super().__init__()
-        self.dataset_path = f'/mnt/sdc/zungwooker/workspace/dataset/cmnist/{str(bias_ratio)}/{str(type)}'
-        self.labels_csv = pd.read_csv(f'/mnt/sdc/zungwooker/workspace/dataset/cmnist/{str(bias_ratio)}/{str(type)}.csv')
+        self.dataset_path = f'{root}/cmnist/{str(bias_ratio)}/{str(type)}'
+        self.labels_csv = pd.read_csv(f'{root}/cmnist/{str(bias_ratio)}/{str(type)}.csv')
         if transform == None:
             self.transform = transforms.Compose([
                 transforms.ToTensor(),

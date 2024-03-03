@@ -9,7 +9,7 @@
             "type": "python",
             "request": "launch",
             "program": "/home/pjay258/workspace/gene-cft-2/preprocess/PBA/train_BCD.py",
-            "args":["-seed" , "0" , "-cuda" , "0" , "-device" , "cuda" , "-epochs" , "100" , "-lr" , "0.001" , "-batch_size" , "256" , "-dataset" , "cmnist"],
+            "args":["-seed" , "0" , "-cuda" , "0" , "-device" , "cuda" , "-epochs" , "1" , "-lr" , "0.001" , "-batch_size" , "256" , "-dataset" , "cmnist" , "-cmnist_ratio" , "0.995"],
             "console": "integratedTerminal",
             "justMyCode": true
         }

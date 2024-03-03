@@ -38,6 +38,7 @@ def main():
 
     # Detect bias aligned/conflict samples of trainset
     softmax = nn.Softmax(dim=1)
+    
     dataloaders = return_dataloaders(dataset=args.dataset,
                                      root='../../dataset/',
                                      batch_size=args.batch_size,
