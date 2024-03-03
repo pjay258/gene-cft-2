@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "/home/pjay258/workspace/gene-cft-2/preprocess/PBA/train_BCD.py",
+            "args":["-seed" , "0" , "-cuda" , "0" , "-device" , "cuda" , "-epochs" , "100" , "-lr" , "0.001" , "-batch_size" , "256" , "-dataset" , "cmnist"],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
