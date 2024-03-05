@@ -87,7 +87,12 @@ def return_dataset(dataset, split, root, cmnist_ratio, transform, use_generated)
                                       type = split, 
                                       bias_ratio = cmnist_ratio, 
                                       transform=None)
-
+    elif dataset == "bar":
+        return dataset.BARDataset(root=root,
+                                  split = split, 
+                                  bias_ratio = cmnist_ratio, 
+                                  transform=None)
+    # root, split, transform=None, percent=None, image_path_list=None
 
 def get_dataloader(dataset,
                    split,

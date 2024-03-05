@@ -24,14 +24,28 @@ def main():
     parser.add_argument('-cmnist_ratio', default=False, type=float, help="cmnist_ratio") #cmnist ratio
     args = parser.parse_args()
 
+    # /mnt/sdc/glee623/projects/Debias/gene-cft-2/preprocess/PBA
     ### parser
-    # python train_BCD.py -seed 0 -cuda 0 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset cmnist -cmnist_ratio 0.995
-    # python train_BCD.py -seed 1 -cuda 1 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset cmnist -cmnist_ratio 0.995
-    # python train_BCD.py -seed 2 -cuda 2 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset cmnist -cmnist_ratio 0.995
-    # python train_BCD.py -seed 3 -cuda 3 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset cmnist -cmnist_ratio 0.995
-    # python train_BCD.py -seed 4 -cuda 4 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset cmnist -cmnist_ratio 0.995
+    # python train_BCD.py -seed 0 -cuda 0 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset cmnist -cmnist_ratio 0.5
+    # python train_BCD.py -seed 1 -cuda 1 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset cmnist -cmnist_ratio 0.5
+    # python train_BCD.py -seed 2 -cuda 2 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset cmnist -cmnist_ratio 0.5
+    # python train_BCD.py -seed 3 -cuda 3 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset cmnist -cmnist_ratio 0.5
+    # python train_BCD.py -seed 4 -cuda 4 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset cmnist -cmnist_ratio 0.5
 
+
+    # bffgq
+    # python train_BCD.py -seed 0 -cuda 0 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset bffhq
+    # python train_BCD.py -seed 1 -cuda 1 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset bffhq 
+    # python train_BCD.py -seed 2 -cuda 2 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset bffhq 
+    # python train_BCD.py -seed 3 -cuda 3 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset bffhq
+    # python train_BCD.py -seed 4 -cuda 4 -device cuda -epochs 100 -lr 0.001 -batch_size 256 -dataset bffhq
+
+
+    # TEST
+    # python train_BCD.py -seed 0 -cuda 0 -device cuda -epochs 2 -lr 0.001 -batch_size 256 -dataset bffhq
     ###############################################
+
+    
     # GPU Setting
     os.environ['CUDA_VISIBLE_DEVICES'] = str(args.cuda)
 
@@ -40,9 +54,9 @@ def main():
 
     # WandB
     remote = True
-    project_name = 'Debiasing' 
-    run_name = "test"
-    # run_name = f'BCD {seed} | seed: {seed}'
+    project_name = 'debiasing-bffhq' 
+    # run_name = "test"
+    run_name = f'BCD {seed} | seed: {seed}'
 
     # Training details
     epochs = args.epochs

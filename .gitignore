@@ -1,2 +1,5 @@
 /dataset/*
 /preprocess/PBA/BCD_models/*
+*.csv
+*.pyc
+preprocess/PBA/wandb/*
